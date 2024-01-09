@@ -1,6 +1,9 @@
+
 body { 
     margin: 0px;
     width: 100%;
+    background-color: #FFFAEE;
+
 }
 
 /* Navigation */
@@ -9,17 +12,19 @@ body {
     vertical-align: top;
 }
 .logo {
-    /* width: 100%; */
-    text-align: center;
-    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 nav {
     width: 100%;
     text-align: center;
-    background-color: white;
 }
 nav li {
- padding: 20px;
+ padding: 50px;
+ font-family: fairfax;
+ font-size: 20px;
+ font-weight: 90;
 }
 nav ul {
     /* width: 100%; */
@@ -30,18 +35,22 @@ nav ul {
 
 /* Hero Section */
 .heroImg {
-    height: 600px;
+    height: 500px;
     /* padding: 25px; */
 }
 .content {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     box-shadow: 5px;
 }
 
+.wenli img {
+    width: 300px;
+    height: 300px;
+}
+
 /* Footer Section */
 footer {
-    background-color: white;
     width: 100%;
 }
 footer ul {
@@ -55,4 +64,18 @@ footer li {
 
 h1 {
     text-align: center;
+    font-family: fairfax;
+    font-weight: 100;
 }
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* FONTS */
+@font-face {
+    font-family: fairfax;
+    src: url(/fonts/fairfax.ttf);
+  }
