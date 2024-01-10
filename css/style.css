@@ -5,12 +5,22 @@ body {
     background-color: #FFFAEE;
 
 }
+p {
+    padding: 0;
+}
 
 /* Navigation */
 .inline-block {
-    display: inline-block;
+    display: flex;
     vertical-align: top;
+    flex-direction: column;
+    padding: 20px;
 }
+
+.inline-block img {
+    padding-bottom: 20px;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -21,10 +31,11 @@ nav {
     text-align: center;
 }
 nav li {
- padding: 50px;
+ padding-left: 25px;
+ padding-right: 25px;
+ padding-bottom: 0px;
  font-family: fairfax;
  font-size: 20px;
- font-weight: 90;
 }
 nav ul {
     /* width: 100%; */
@@ -37,16 +48,57 @@ nav ul {
 .heroImg {
     height: 500px;
     /* padding: 25px; */
+    border: 1px solid;
 }
 .content {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 5px;
+    /* display: flex; */
+    border: 1px solid;
+}
+
+.paragraph {
+    display: flex;
+    border: 1px solid;
+}
+
+.about {
+    padding-left: 25px;
+}
+
+.seeMoreButton {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #FFB0C8;
+    color: #FD0202;
 }
 
 .wenli img {
     width: 300px;
     height: 300px;
+}
+
+/*project section*/
+.slides {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    justify-content: center;
+    text-align: center;
+}
+
+.projSlides {
+    display: flex;
+    flex-direction: row;
+}
+
+.projImg img {
+    width: 400px;
+    height: 400px;
 }
 
 /* Footer Section */
