@@ -51,11 +51,36 @@ nav ul {
     padding: 0px;
 }
 
+
 /* Hero Section */
 
-.content {
+.heroImg {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.content h2{
+    background:#D1EA8C;
+    padding: 15px 30px;
+    border-radius: 40px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.content h2:after {
+    content:'';
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #D1EA8C;
+    border-bottom: 0;
+    margin-left: 20px;
+    margin-bottom: -20px;
 }
 
 .paragraph {
@@ -90,9 +115,32 @@ nav ul {
     max-width: 1200px;
     margin: 0 auto;
 }
+.projSectionTitle { /*cant get it to align to the right*/
+    display: flex;
+    flex-direction: column;
+}
+.projSectionTitle h2{
+    background:#FD0202;
+    padding: 15px 30px;
+    border-radius: 40px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
 
-.projSectionTitle {
-    text-align: right;
+.projSectionTitle h2:after {
+    content:'';
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #FD0202;
+    border-bottom: 0;
+    margin-left: 20px;
+    margin-bottom: -20px;
 }
 
 .slides {
@@ -241,11 +289,15 @@ h3 {
 
 /*MOBILE MEDIA QUERY*/
 @media only screen and (max-width: 600px) {
-    .heroImg h2 {
-        width: 100%;
+
+/*about*/
+    .heroImg {
+        margin-left: 20px;
+    }
+    .content h2 {
         padding-left: 20px;
     }
-    .heroImg h3 {
+    .content h3 {
         width: 100%;
         padding-left: 20px;
     }
@@ -255,23 +307,31 @@ h3 {
     .wenli {
         margin: 0 auto;
     }
+    .about {
+        text-align: center;
+    }
+
+/*project*/
     .project {
         width: 100%;
     }
     .projSectionTitle {
-        padding-right: 20px;
+        padding-left: 20px;
     }
-
     .projSlides {
         flex-direction: column;
     }
     .slide {
         width: 100%;
     }
+
+/*resume*/
     .resume {
         width: 100%;
         padding-left: 20px;
     }
+
+/*footer*/
     .foot {
         padding-right: 20px;
     }
